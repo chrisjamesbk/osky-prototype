@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>OpenSky</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    
+    <link rel="shortcut icon" href="./_/img/favicon.ico">
+
+    <!--<link rel="stylesheet" href="./_/css/style.css">-->
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            position: relative;
+            width: 960px;
+            height: 669px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .main img {
+            max-width: 100%;
+            display: block;
+        }
+        .main a {
+            display: block;
+            position: absolute;
+            text-indent: -9999px;
+        }
+        a.next,
+        a.accept {
+            top:590px;
+            left:50%;
+            margin-left:-64px; 
+            width:158px;
+            height:38px;
+        }
+        a.none {
+            top:598px;
+            left:68%;
+            margin-left:-64px;
+            width:99px;
+            height:27px;
+        }
+        .header {
+            position: fixed;
+            z-index: 99;
+        }
+        .quiz {
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-transition: all 0.5s ease-out;  /* Safari 3.2+, Chrome */
+            -moz-transition: all 0.5s ease-out;  /* Firefox 4-15 */
+            -o-transition: all 0.5s ease-out;  /* Opera 10.5–12.00 */
+            transition: all 0.5s ease-out;  /* Firefox 16+, Opera 12.50+ */
+        }
+        .question {
+            position: relative;
+            height: 669px;
+            overflow: hidden;
+        }
+        .hover {
+            position: relative;
+            cursor: pointer;
+        }
+        .hover > .b {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .hover > .heart {
+            position: absolute;
+            top: 16px;
+            right: 24px;
+        }
+        .is-hidden {
+            display: none !important;
+        }
+        .main .is-visible {
+            display: block !important;
+        }
+    </style>
+
+    <script src="./_/js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+
+    <div class="main">
+        <div class="header">
+            <img src="_/img/header.png" width="960" height="73" alt="Quiz Header">
+            <a href="./skip.html" style="top:8px;right:22px;height:26px;width:42px;z-index:100;">Skip</a>
+        </div>
+        <div class="quiz">
+            <div class="question">
+                <table id="Table_01" width="960" height="672" border="0" cellpadding="0" cellspacing="0">
+                	<tr>
+                		<td colspan="6">
+                		    <img src="_/img/p1/OS_QuizTest-01_01.jpg" width="960" height="168" alt="OS QuizTest 01 01">
+                		</td>
+                	</tr>
+                	<tr>
+                		<td>
+                			<img src="_/img/p1/OS_QuizTest-01a_07.jpg" width="80" height="189" alt=""></td>
+                		<td>
+                		    <div class="hover">
+                			    <img src="_/img/p1/OS_QuizTest-01a_08.jpg" width="198" height="189" class="a">
+                			    <img src="_/img/p1/OS_QuizTest-01b_08.jpg" width="198" height="189" class="b is-hidden">
+                			    <img src="_/img/heart.png" class="heart is-hidden">
+                			</div>
+                		</td>
+                		<td>
+                			<div class="hover">
+                                <img src="_/img/p1/OS_QuizTest-01a_09.jpg" width="202" height="189" class="a">
+                			    <img src="_/img/p1/OS_QuizTest-01b_09.jpg" width="202" height="189" class="b is-hidden">
+                			    <img src="_/img/heart.png" class="heart is-hidden">    
+                			</div>
+                		</td>
+                		<td>
+                			<div class="hover">
+                                <img src="_/img/p1/OS_QuizTest-01a_10.jpg" width="198" height="189" class="a">
+                			    <img src="_/img/p1/OS_QuizTest-01b_10.jpg" width="198" height="189" class="b is-hidden">
+                			    <img src="_/img/heart.png" class="heart is-hidden">    
+                			</div>
+                		</td>
+                		<td>
+                			<div class="hover">
+                                <img src="_/img/p1/OS_QuizTest-01a_11.jpg" width="199" height="189" class="a">
+                			    <img src="_/img/p1/OS_QuizTest-01b_11.jpg" width="199" height="189" class="b is-hidden">
+                			    <img src="_/img/heart.png" class="heart is-hidden">
+                			</div>
+                		</td>
+                		<td>
+                			<img src="_/img/p1/OS_QuizTest-01a_12.jpg" width="83" height="189" alt=""></td>
+                	</tr>
+                	<tr>
+                		<td>
+                			<img src="_/img/p1/OS_QuizTest-01a_13.jpg" width="80" height="191" alt=""></td>
+                		<td>
+                			<div class="hover">
+                                <img src="_/img/p1/OS_QuizTest-01a_14.jpg" width="198" height="191" class="a">
+                    			<img src="_/img/p1/OS_QuizTest-01b_14.jpg" width="198" height="191" class="b is-hidden">
+                    			<img src="_/img/heart.png" class="heart is-hidden">
+                			</div>
+                		</td>
+                		<td>
+                			<div class="hover">
+                                <img src="_/img/p1/OS_QuizTest-01a_15.jpg" width="202" height="191" class="a">
+                    			<img src="_/img/p1/OS_QuizTest-01b_15.jpg" width="202" height="191" class="b is-hidden">
+                    			<img src="_/img/heart.png" class="heart is-hidden">
+                			</div>
+                		</td>
+                		<td>
+                			<div class="hover">
+                                <img src="_/img/p1/OS_QuizTest-01a_16.jpg" width="198" height="191" class="a">
+                    			<img src="_/img/p1/OS_QuizTest-01b_16.jpg" width="198" height="191" class="b is-hidden">
+                    			<img src="_/img/heart.png" class="heart is-hidden">
+                			</div>
+                		</td>
+                		<td>
+                			<div class="hover">
+                                <img src="_/img/p1/OS_QuizTest-01a_17.jpg" width="199" height="191" class="a">
+                    			<img src="_/img/p1/OS_QuizTest-01b_17.jpg" width="199" height="191" class="b is-hidden">
+                    			<img src="_/img/heart.png" class="heart is-hidden">
+                			</div>
+                		</td>
+                		<td>
+                			<img src="_/img/p1/OS_QuizTest-01a_18.jpg" width="83" height="191" alt=""></td>
+                	</tr>
+                	<tr>
+                		<td colspan="6">
+                		    <img src="_/img/p1/OS_QuizTest-01_04.jpg" width="960" height="124" alt="OS QuizTest 01 04">
+                		</td>
+                	</tr>
+                </table>
+                <a class="next" href="#">Next</a>
+                <!--<a href="./" class="none">None of these</a>-->
+            </div>
+            <div class="question">
+                <img src="_/img/OS_QuizTest-02.jpg" width="960" height="669" alt="OS QuizTest 02">
+                <a class="next" href="#" style="">Next</a>
+                <!--<a href="./" class="none" style="">None of these</a>-->
+            </div>
+            <div class="question">
+                <img src="_/img/OS_QuizTest-03.jpg" width="961" height="669" alt="OS QuizTest 03">
+                <a class="next" href="#" style="">Next</a>
+                <!--<a href="./" class="none" style="">None of these</a>-->
+            </div>
+            <div class="question">
+                <img src="_/img/OS_QuizTest-04.jpg" width="961" height="669" alt="OS QuizTest 04">
+                <a class="next" href="#" style="">Next</a>
+                <!--<a href="./" class="none" style="">None of these</a>-->
+            </div>
+            <div class="question">
+                <img src="_/img/OS_QuizTest-05.jpg" width="961" height="669" alt="OS QuizTest 05">
+                <a class="next" href="#" style="">Next</a>
+                <!--<a href="./" class="none" style="">None of these</a>-->
+            </div>
+            <div class="question">
+                <img src="_/img/OS_QuizTest-06.jpg" width="961" height="669" alt="OS QuizTest 06">
+                <a class="next" href="#" style="">Next</a>
+                <!--<a href="./" class="none" style="">None of these</a>-->
+            </div>
+            <div class="question">
+                <img src="_/img/OS_QuizTest-07.jpg" width="961" height="668" alt="OS QuizTest 07">
+                <a class="next" href="#" style="">Next</a>
+                <!--<a href="./" class="none" style="">None of these</a>-->
+            </div>
+            <div class="question">
+                <img src="_/img/OS_QuizTest-08.jpg" width="961" height="669" alt="OS QuizTest 08">
+                <a class="next" href="#" style="">Next</a>
+                <!--<a href="./" class="none" style="">None of these</a>-->
+            </div>
+            <div class="question">
+                <img src="_/img/OS_QuizTest-09.jpg" width="961" height="669" alt="OS QuizTest 09">
+                <a class="next" href="#" style="">Next</a>
+                <!--<a href="./" class="none" style="">None of these</a>-->
+            </div>
+            <div class="question">
+                <img src="_/img/OS_QuizTest-10.jpg" width="961" height="669" alt="OS QuizTest 10">
+                <a class="accept" href="./results.html" style="">Next</a>
+                <!--<a href="./" class="none" style="">None of these</a>-->
+            </div>
+        </div>
+            
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./_/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <script src="./_/js/spin.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $.fn.spin = function(opts) {
+                this.each(function() {
+                    var $this = $(this),
+                        data = $this.data();
+
+                    if (data.spinner) {
+                        data.spinner.stop();
+                        delete data.spinner;
+                    }
+                    if (opts !== false) {
+                        data.spinner = new Spinner($.extend({color: $this.css('color')}, opts)).spin(this);
+                    }
+                });
+                return this;
+            };
+            var top = 0;
+            $('.next').click(function(e){
+                e.preventDefault();
+                top -= 669;
+                $('.quiz').css('top', top);
+            });
+            $('.accept').click(function(e){
+                e.preventDefault();
+                
+                var opts = {
+                  color: '#000',
+                  top: 'auto',
+                  left: 'auto'
+                };
+                $('.main').spin(opts);
+                $('.quiz').css('opacity', 0.3);
+                
+                setTimeout(function(){
+                    window.location = './results.html';
+                }, 5000);
+            });
+            $('.hover').hover(function(){
+                var thisb = $(this).find('.b');
+                var nohov = $('.no-hover')
+                $('.b').not(thisb).not(nohov).removeClass('is-hidden');
+                $(this).find('.heart').removeClass('is-hidden');
+            }, function(){
+                $('.b').addClass('is-hidden');
+                $(this).find('.heart').addClass('is-hidden');
+            });
+            $('.hover').click(function(){
+                $(this).find('.b').addClass('no-hover');
+                $(this).find('.heart').addClass('is-visible');
+            });
+        });
+    </script>
+
+</body>
+</html>
